@@ -23,10 +23,9 @@ public class ContaTerminal {
         ContaBanco conta = new ContaBanco(numero, agencia, nomeCliente, saldo);
 
         // Exibindo os dados da conta
-        System.out.println("Conta criada com sucesso:");
+        System.out.println("Olá " + conta.getNomeCliente() + ", obrigada por criar sua conta em nosso banco!"); 
+        System.out.println("o número da conta é: " + conta.getNumero());
         System.out.println("Agência: " + conta.getAgencia());
-        System.out.println("Número da Conta: " + conta.getNumero());
-        System.out.println("Nome do Cliente: " + conta.getNomeCliente());
         System.out.println("Saldo: " + conta.getSaldo());
 
         scanner.close();
